@@ -12,4 +12,5 @@ variable "location" {
 variable "subnet_id" {
   description = "Azure region for resources"
   type        = string
+  default     = "mysubnet"
 }
