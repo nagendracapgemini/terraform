@@ -1,6 +1,16 @@
 provider "azurerm" {
   features {}
 }
+
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "var.resource_group_name"
+    storage_account_name = "csg100320030cfafaaf"
+    container_name       = "mani"
+    key                  = "dev.terraform.tfstate"
+  }
+}
+
 module "network" {
   source = "./modules/network"
   resource_group_name = "mani"
