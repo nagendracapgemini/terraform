@@ -9,8 +9,8 @@ variable "location" {
   type        = string
   default     = "eastus"
 }
-variable "subnet_id" {
-  description = "Azure region for resources"
-  type        = string
-  default     = "mysubnet"
-}
+# variable "subnet_id" {
+#   description = "Azure region for resources"
+#   type        = string
+#   default     = "mysubnet"
+# }
